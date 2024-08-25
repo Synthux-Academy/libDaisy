@@ -133,13 +133,13 @@ class Mpr121
         SetThresholds(config_.touch_threshold, config_.release_threshold);
         WriteRegister(MPR121_MHDR, 0x01);
         WriteRegister(MPR121_NHDR, 0x01);
-        WriteRegister(MPR121_NCLR, 0x0E);
-        WriteRegister(MPR121_FDLR, 0x00);
+        WriteRegister(MPR121_NCLR, 0x14);
+        WriteRegister(MPR121_FDLR, 0x80);
 
         WriteRegister(MPR121_MHDF, 0x01);
         WriteRegister(MPR121_NHDF, 0x05);
         WriteRegister(MPR121_NCLF, 0x01);
-        WriteRegister(MPR121_FDLF, 0x00);
+        WriteRegister(MPR121_FDLF, 0x80);
 
         WriteRegister(MPR121_NHDT, 0x00);
         WriteRegister(MPR121_NCLT, 0x00);
